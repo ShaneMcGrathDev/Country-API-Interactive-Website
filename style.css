@@ -1,0 +1,267 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header {
+  text-align: center;
+  box-shadow: 2px;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+div#favoriteCards.modalBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 23%;
+  box-shadow: 0 0 4px 3px;
+  text-align: center;
+  padding: 1.5em;
+  margin-top: 4.5rem;
+}
+
+.images {
+  width: 80%;
+}
+
+.title {
+  font-size: 1.3rem;
+}
+
+.population,
+.continent {
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  background-color: white;
+  border-radius: 10px;
+  height: 50rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8E8D8A;
+  border-radius: 10px;
+  height: 8rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5ca1e1;
+}
+
+a {
+  color: black;
+}
+
+.header {
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header ul a {
+  display: block;
+
+
+  padding: 20px;
+  text-decoration: none;
+  border-right: 1px solid #aaa;
+}
+
+.header ul a:hover {
+  background-color: #2E9CCA;
+  color: white;
+}
+
+/* Header Sort Span Tag Styling */
+
+span.material-icons-outlined {
+  margin-right: 2rem;
+  font-size: 50px;
+}
+
+span.material-icons-outlined:hover {
+  background-color: #2E9CCA;
+  color: white;
+}
+
+/* Modal Sort Span Tag Styling */
+
+#sortLogo {
+  margin-left: 12rem;
+}
+
+header .logo {
+  float: left;
+  display: block;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+  padding-top: 20px;
+  margin-left: 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+  display: block;
+  height: 6px;
+  width: 30px;
+  position: relative;
+  transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+  background: black;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 1.2rem;
+  transition: all .2s ease-out;
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  background: black;
+  content: "";
+  display: block;
+  height: 110%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  right: 1.2rem;
+  transition: all .2s ease-out;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked~.menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+/* Blur Effect */
+
+.card {
+  padding: 30px;
+  margin: 6%;
+  background: white;
+  width: 30%;
+  border: 1px solid #d6d6d6;
+  box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  transition: .2s all;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 8px solid var(--TextContrast-DarkRed);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+.nav-icon{
+  margin-bottom: 50px;
+}
+
+.card:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.35s;
+  border-left: 8px solid var(--TextContrast-DarkRed);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+button#RemoveFromFavorites.button{
+ padding: 0rem;
+}
+
+.box-wrap:hover .card {
+  transform: scale(.98);
+  box-shadow: none;
+}
+
+.box-wrap:hover .card:hover {
+  transform: scale(1);
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+}
+
+/* Card Button */
+
+.button {
+  font-size: 10px;
+  background-color: white;
+  text-decoration: none;
+}
+
+#cards.card-wrapper {
+  position: absolute;
+  margin-top: 2rem;
+}
+
+
+

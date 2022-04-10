@@ -1,0 +1,85 @@
+/* Media Query */
+
+@media (max-width: 970px) {
+    #sortLogo {
+        margin-left: 8rem;
+
+    }
+}
+
+
+@media (min-width: 950px) {
+    div.card {
+        margin-top: 10%;
+    }
+
+
+
+    @media (max-width: 830px) {
+        #sortLogo {
+            margin-left: 4rem;
+
+        }
+    }
+
+    @media (max-width: 661px) {
+        #sortLogo {
+            margin-left: 0rem;
+
+        }
+    }
+
+    @media (max-width: 530px) {
+        .button {
+            padding: 0.2rem;
+        }
+    }
+
+
+    /* Media Query */
+    @media (max-width: 425px) {
+        header.header {
+            height: 20%;
+        }
+    }
+
+
+    @media (max-width: 375px) {
+        button#addToFavorites.button {
+            padding: 0.4rem;
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 235px) {
+        header.header {
+            height: 30%;
+        }
+    }
+
+    @media (min-width: 48em) {
+        .header li {
+            float: left;
+        }
+
+        .menu-icon .nav-icon {
+            margin-right: 100px;
+        }
+
+        .header li a {
+            padding: 20px 30px;
+        }
+
+        .header .menu {
+            clear: none;
+            float: right;
+            max-height: none;
+        }
+    }
+
+    /* Makes Hamburger menu hidden until 48em query point */
+    .header .menu-icon {
+        display: none;
+    }
+
+}
