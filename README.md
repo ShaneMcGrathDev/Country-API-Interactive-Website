@@ -44,7 +44,7 @@ external API data for the main page and the favorites page
 
 ## Explanation of the "generateHTML()" function
 
-The purpose of this function is to dynamically product HTML using JavaScript
+The purpose of this function is to dynamically produce HTML using JavaScript
 The JavaScript retrieves API country data to populate page information
 The JavaScript uses a for each loop to iterate through an array of country object data
 The object data is retrieved by iterating through each object index and assigning the datapoints to HTML elements
