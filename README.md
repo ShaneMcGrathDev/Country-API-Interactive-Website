@@ -1,16 +1,16 @@
 # Country-API-Interactive-Website
 
-#Purpose of this code:
+# Purpose of this code:
 
-###This code produces a website of information about countries of the world such as population.
+### This code produces a website of information about countries of the world such as population.
 
-###Most of the HTML is dynamically written using JavaScript to iterate through country data from an external API.
+### Most of the HTML is dynamically written using JavaScript to iterate through country data from an external API.
 
-###The external API source is: 'https://restcountries.com/v3.1/all'.
+### The external API source is: 'https://restcountries.com/v3.1/all'.
 
-###A modal page is included which allows users to select and store favorites selected from the main page.
+### A modal page is included which allows users to select and store favorites selected from the main page.
 
-###Each displayed country dataset is generated with JavaScript as an HTML card with a button to "add to favorites".
+### Each displayed country dataset is generated with JavaScript as an HTML card with a button to "add to favorites".
 
 ###The population for the main page of country data and the special "favorites" page is calculated and displayed using the "display population" button
 
